@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Контакты | Mirext Полимер</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" sizes="any">
+  <link rel="preload" as="style" href="css/app.min.css">
+  <link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="flex-container">
+        <div class="logo">
+          <a href="/" class="logo-link">
+            <img src="images/dist/logo-white.png" class="logo-image" alt="">
+          </a>
+        </div>
+        <div class="top-menu hidden-mobile">
+          <div class="menu-item">
+            <a href="/products.html" class="menu-item__link">Продукция</a>   
+          </div>
+          <div class="menu-item">
+            <a href="/about.html" class="menu-item__link">О компании</a>
+          </div>
+          <div class="menu-item">
+            <a href="/contacts.html" class="menu-item__link">Контакты</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<div class="contacts-page">
+
+  <div class="main-image">
+    <img src="images/dist/contacts-image.jpg" alt="">
+  </div>
+
+  <div class="title-section">
+    <div class="container">
+      <div class="page-title">КАК НАС НАЙТИ</div>
+    </div>
+  </div>
+
+  <div class="contacts-section">
+    <div class="container">
+      <div class="flex-container">
+        <div class="contacts">
+          <div class="contacts-title">Наш офис</div>
+          <ul class="list">
+            <li class="list-item">Адрес: 456300 г. Миасс Тургоякское шоссе, 3/13, а/я 728</li>
+            <li class="list-item">Телефон: +7 (3513) 24-06-66, 54-32-43, 54-35-95</li>
+            <li class="list-item">E-mail: mirekst@inbox.ru</li>
+            <li class="list-item">
+              <a href="/pdf/company.pdf" class="list-item__link" target="_blank">Реквизиты</a>
+            </li>
+          </ul>
+          <div class="contacts-title">Напишите нам</div>
+          <form id="callback-form" class="form" method="post">
+            <div class="form-group">
+              <label for="name" class="label">Имя <span class="violet-color">*</span></label>
+              <input type="text" name="name" id="name" class="input-field js-required-name" required minlength="3" maxlength="20" autocomplete="on">
+            </div>
+            <div class="form-group">
+              <label for="contacts-phone" class="label">Телефон <span class="violet-color">*</span></label>
+              <input type="text" name="phone" id="contacts-phone" class="input-field js-required-phone js-input-phone-mask" required size="18" placeholder="+7 (000) 000 00 00" autocomplete="on">
+            </div>
+            <div class="form-group">
+              <label for="message" class="label">Сообщение <span class="violet-color">*</span></label>
+              <textarea name="message" id="message" class="input-field textarea js-required-message" required minlength="3" maxlength="250"></textarea>
+            </div>
+            <div class="agreement-text">
+              <input type="checkbox" name="checkbox-read" class="custom-checkbox js-required-checkbox" id="checkbox-read-callback" checked required  onchange="document.getElementById('callback-submit-btn').disabled = !this.checked;">
+              <label for="checkbox-read-callback" class="custom-checkbox-label"></label>
+              <span class="checkbox-text">Ознакомлен с <a href="/privacy-policy.html" class="privacy-policy-link" target="_blank">политикой конфиденциальности</a></span>
+            </div>
+            <div class="agreement-text">
+              <input type="checkbox" name="checkbox-agree" class="custom-checkbox js-required-checkbox" id="checkbox-agree-callback" checked required  onchange="document.getElementById('callback-submit-btn').disabled = !this.checked;">
+              <label for="checkbox-agree-callback" class="custom-checkbox-label"></label>
+              <span class="checkbox-text">Согласен на <a href="/soglasie-na-obrabotku-personalnyh-dannyh.html" class="agreement-link" target="_blank">обработку персональных данных</a></span>
+            </div>
+            <button type="button" id="callback-submit-btn" class="submit-btn second-btn">Отправить сообщение</button>
+          </form>
+        </div>
+        <div class="map">
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8aa09ed18fe29fd0659589987d0ddaf604e26a8360da5a841c9941acc65c5229&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="to-top" class="to-top">
+    <img src="images/dist/to-top.png" class="to-top-image" alt="">
+  </div>
+
+</div>
+
+<script>
+  const topMenuItemActive = 2;
+</script>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="flex-container">
+          <div class="logo-wrapper">
+            <div class="logo">
+              <img src="images/dist/logo-white.png" alt="">
+            </div>
+            <div class="address">456300 г. Миасс, <br>Тургоякское шоссе 3/13, а/я 728</div>
+            <div class="company-info">
+              <div class="company-info-item">ООО "МИРЭКСТ ПОЛИМЕР"</div>
+              <div class="company-info-item">ИНН 7415049422</div>
+              <div class="company-info-item">КПП 741501001</div>
+              <div class="company-info-item">ОГРН 1067415019946</div>
+            </div>
+          </div>
+          <div class="bottom-menu">
+            <div class="menu-item">
+              <a href="/">Главная</a>   
+            </div>
+            <div class="menu-item">
+              <a href="/products.html">Продукция</a>
+            </div>
+            <div class="menu-item">
+              <a href="/about.html">О компании</a>
+            </div>
+            <div class="menu-item">
+              <a href="/contacts.html">Контакты</a>
+            </div>
+          </div>
+          <div class="contacts">
+            <div class="phones">
+              <div class="phone">+7 (3513) 24-06-66</div>
+              <div class="phone">+7 (3513) 54-32-43</div>
+              <div class="phone">+7 (3513) 54-35-95</div>
+            </div>
+            <div class="email">mirekst@inbox.ru</div>
+            <div class="mobile-phone">
+              <a href="https://wa.me/79226373662" class="mobile-phone__link whatsapp">
+                <img src="images/dist/whatsapp.png" alt="">
+              </a>
+              <a href="https://t.me/+79226373662" class="mobile-phone__link telegram">
+                <img src="images/dist/telegram.png" alt="">
+              </a>
+              <span class="phone">+7 (922) 637 36 62</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="flex-container">
+          <div id="current-year" class="current-year"></div>
+          <div class="required-links">
+            <div class="required-links-item">
+              <a href="/privacy-policy.html">Политика конфиденциальности</a>
+            </div>
+            <div class="required-links-item">
+              <a href="/soglasie-na-obrabotku-personalnyh-dannyh.html">Согласие на обработку персональных данных</a>
+            </div>
+          </div>
+          <div class="authors">
+            <div class="authors-item">
+              <a href="https://vk.com/fenix_mix" target="_blank">Сайт разработан в студии "Феникс"</a>
+            </div>
+            <div class="authors-item">
+              <a href="https://mybutton.ru" target="_blank">Поддержка Button</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="burger-menu-wrapper">
+    <div class="burger-menu">
+      <span class="span"></span>
+    </div>
+  </div>
+
+  <div class="mobile-menu">
+    <div class="container">
+      <div class="logo">
+        <img src="/images/dist/logo-white.png" alt="">
+      </div>
+      <ul class="menu">
+        <li class="menu-item">
+          <a href="/products.html" class="menu-item__link">Продукция</a>
+          <ul class="submenu">
+            <li class="submenu-item">
+              <a href="/products.html#tekhnicheskie-plenki">Технические пленки</a>
+            </li>
+            <li class="submenu-item">
+              <a href="/products.html#termousadochnye-plenki">Термоусадочные пленки</a>
+            </li>
+            <li class="submenu-item">
+              <a href="/products.html#strejch-hud">Стрейч-худ</a>
+            </li>
+            <li class="submenu-item">
+              <a href="/products.html#plenki-s-logotipom">Пленки с логотипом</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a href="/about.html" class="menu-item__link">О компании</a>
+        </li>
+        <li class="menu-item">
+          <a href="/contacts.html" class="menu-item__link">Контакты</a>
+        </li>
+        <li class="menu-item">
+          <a href="/calculator.html" class="menu-item__link">Калькулятор</a>
+        </li>
+      </ul>
+      <div class="mobile-phone">
+        <a href="https://wa.me/79095558987" class="mobile-phone__link whatsapp">
+          <img src="images/dist/whatsapp.png" alt="">
+        </a>
+        <a href="https://t.me/+79095558987" class="mobile-phone__link telegram">
+          <img src="images/dist/telegram.png" alt="">
+        </a>
+        <span class="phone">+7 (909) 555 89 87</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="cookie_note" class="we-use-cookie">
+    <div class="we-use-cookie-wrapper">
+      <div class="we-use-cookie-text">Используя сайт www.mirext.ru Вы соглашаетесь на сбор, анализ и использование персональных данных, в соответствии с политикой по обработке персональных данных</div>
+      <button id="cookie_accept" class="we-use-cookie-close">Согласен</button>
+    </div>
+  </div>
+
+  <div id="callback-modal" class="modal-window callback-modal">
+    <div class="modal-wrapper">
+      <div class="modal-area">
+        <div class="modal-close">
+          <div class="close"></div>
+        </div>
+        <div class="modal-title">ЗАПОЛНИТЕ ФОРМУ ЗАЯВКИ</div>        
+        <form id="callback-modal-form" class="form">
+          <div class="form-group">
+            <label for="name-callback-modal" class="label">Имя <span class="violet-color">*</span></label>
+            <input type="text" name="name" id="name-callback-modal" class="input-field js-required-name" required minlength="3" maxlength="20" autocomplete="on">
+          </div>
+          <div class="form-group">
+            <label for="phone-callback-modal" class="label">Телефон <span class="violet-color">*</span></label>
+            <input type="text" name="phone" id="phone-callback-modal" class="input-field js-required-phone js-input-phone-mask" required size="18" placeholder="+7 (000) 000 00 00" autocomplete="on">
+          </div>
+          <div class="form-group">
+            <label for="message-callback-modal" class="label">Сообщение <span class="violet-color">*</span></label>
+            <input type="text" name="message" id="message-callback-modal" class="input-field js-required-message" required minlength="3" maxlength="250">
+          </div>
+          <div class="agreement-text">
+            <input type="checkbox" name="checkbox-read" class="custom-checkbox js-required-checkbox" id="checkbox-read-callback-modal" checked required onchange="document.getElementById('callback-modal-submit-btn').disabled = !this.checked;">
+            <label for="checkbox-read-callback-modal" class="custom-checkbox-label"></label>
+            <span class="checkbox-text">Ознакомлен с <a href="/privacy-policy.html" class="privacy-policy-link" target="_blank">политикой конфиденциальности</a></span>
+          </div>
+          <div class="agreement-text">
+            <input type="checkbox" name="checkbox-agree" class="custom-checkbox js-required-checkbox" id="checkbox-agree-callback-modal" checked required onchange="document.getElementById('callback-modal-submit-btn').disabled = !this.checked;">
+            <label for="checkbox-agree-callback-modal" class="custom-checkbox-label"></label>
+            <span class="checkbox-text">Согласен на <a href="/soglasie-na-obrabotku-personalnyh-dannyh.html" class="agreement-link" target="_blank">обработку персональных данных</a></span>
+          </div>
+          <button type="button" id="callback-modal-submit-btn" class="modal-submit-btn">
+            <span class="modal-submit-btn__text">Отправить</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script rel="modulepreload" src="js/app.min.js"></script>
+  <script type="module" src="js/app.min.js"></script>
+</body>
+</html>

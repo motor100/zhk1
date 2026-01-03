@@ -1,0 +1,22 @@
+Remember that you can report errors and get help in https://github.com/NicoSantangelo/sublime-gulp
+
+03-14-2025 17:56:
+node:internal/errors:540
+      throw error;
+      ^
+
+TypeError [ERR_INVALID_ARG_TYPE]: The "cb" argument must be of type function. Received undefined
+    at makeCallback (node:fs:185:3)
+    at Object.unlink (node:fs:1859:14)
+    at requireGulp (/home/world/.config/sublime-text/Packages/Gulp/write_tasks_to_cache.js:30:12)
+    at Object.<anonymous> (/home/world/.config/sublime-text/Packages/Gulp/write_tasks_to_cache.js:83:12)
+    at Module._compile (node:internal/modules/cjs/loader:1565:14)
+    at Object..js (node:internal/modules/cjs/loader:1708:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+
+Node.js v22.12.0

@@ -1,0 +1,89 @@
+// USER VARIABLES SECTION
+$violetcolor: #6B2FE2; // Violet Color
+$whitecolor: #FFF; // White Color
+$greycolor: #BFBFBF; // Grey Color
+$lightgreycolor: #D9D9D9; // Light Grey Color
+$secondgreycolor: #5A5A5A; // Second Grey Color
+$greengradient: linear-gradient(90deg, #80E765 0%, #F1F509 100%);
+$violetgradient: linear-gradient(180deg, #1C0064 0%, #2C0086 100%);
+$fontsize: 16px; // Body Font Size
+$textcolor: #000; // Text Color
+$lineheight: 1.5; // Document Line Height
+$userfont: 'russo-one', sans-serif; // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+
+// IMPORT SECTION
+
+// @import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl) {
+  @font-face {
+    font-family: $fname;
+    font-style: $fstyle;
+    font-weight: $fweight;
+    src: url($furl) format('woff2');
+  }
+}
+
+@include font('russo-one', normal, 400, '../fonts/russo-one.woff2');
+@include font('opensans-regular', italic, 400, '../fonts/OpenSans-Regular.woff2');
+@include font('opensans-semibold', italic, 400, '../fonts/OpenSans-SemiBold.woff2');
+@include font('opensans-bold', italic, 400, '../fonts/OpenSans-Bold.woff2');
+
+// GENERAL CSS SETTINGS
+* {
+  box-sizing: border-box;
+}
+
+::placeholder {
+  color: #9E9E9E;
+}
+
+input, textarea {
+  outline: none;
+  &:focus:required:invalid {
+    border-color: red;
+  }
+  // &:required:valid {
+  //   border-color: green;
+  // }
+}
+
+input:active,
+input:focus,
+input:focus-visible,
+textarea:focus-visible {
+  outline: none;
+}
+input::-moz-focus-inner {
+  border: 0;
+}
+textarea {
+  resize: none;
+}
+a, a:focus, a:active {
+  outline: none;
+}
+a, a:hover {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+button, button:focus, button:active {
+  outline: none;
+}
+
+body {
+  font-family: $userfont;
+  font-size: $fontsize;
+  line-height: $lineheight;
+  color: $textcolor;
+  min-width: 320px;
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+  overflow-x: hidden;
+}

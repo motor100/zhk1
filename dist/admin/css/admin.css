@@ -1,0 +1,45 @@
+input:active, input:focus {
+  outline: none;
+}
+input::-moz-focus-inner {
+  border: 0;
+}
+.login-page .section {
+  background-color: #508bfc;
+}
+.form-wrapper {
+  border-radius: 1rem;
+}
+.content .materials,
+.content .calc {
+  width: 500px;
+  margin: 0 auto;
+}
+.content .materials .table input {
+  width: 70px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  text-align: center;
+  -moz-appearance: textfield;
+}
+.content .materials .table input::-webkit-inner-spin-button,
+.content .materials .table input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.content .price-za-kvadrat {
+  width: 70px;
+  margin-left: auto;
+  text-align: center;
+}
+.content .modules-item {
+  display: flex;
+  justify-content: space-between;
+}
+.content .module-price {
+  width: 70px;
+  border: none;
+  text-align: center;
+}
+
