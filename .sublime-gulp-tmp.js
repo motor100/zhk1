@@ -13,11 +13,6 @@ import TerserPlugin     from 'terser-webpack-plugin'
 import gulpSass         from 'gulp-sass'
 import * as dartSass    from 'sass'
 const  sass             = gulpSass(dartSass)
-// import sassglob         from 'gulp-sass-glob'
-// import less             from 'gulp-less'
-// import lessglob         from 'gulp-less-glob'
-// import styl             from 'gulp-stylus'
-// import stylglob         from 'gulp-noop'
 import postCss          from 'gulp-postcss'
 import cssnano          from 'cssnano'
 import autoprefixer     from 'autoprefixer'
@@ -100,7 +95,7 @@ function styles() {
     // .pipe(eval(`${preprocessor}glob`)())
     .pipe(eval(preprocessor)({
       'include css': true,
-      silenceDeprecations: ['legacy-js-api', 'mixed-decls', 'color-functions', 'global-builtin', 'import'],
+      silenceDeprecations: ['legacy-js-api', 'color-functions', 'global-builtin', 'import'],
       loadPaths: ['./']
     })).on('error', function handleError(err) {
       console.error('❌ Preprocessor error:', err.message);
@@ -141,7 +136,10 @@ function buildcopy() {
     '{app/js,app/css}/*.min.*',
     'app/images/**/*.*',
     '!app/images/src/**/*',
-    'app/fonts/**/*'
+    'app/fonts/**/*',
+    'app/admin/**/*', // folder admin css
+    'app/pdf/**/*', // folder with pdf documents
+    'app/phpmailer/**/*', // folder phpmailer
   ], { base: 'app/', encoding: false })
   .pipe(dest('dist'))
 }

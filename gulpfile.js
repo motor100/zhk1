@@ -95,7 +95,8 @@ function styles() {
     // .pipe(eval(`${preprocessor}glob`)())
     .pipe(eval(preprocessor)({
       'include css': true,
-      silenceDeprecations: ['legacy-js-api', 'mixed-decls', 'color-functions', 'global-builtin', 'import'],
+      //silenceDeprecations: ['legacy-js-api', 'mixed-decls', 'color-functions', 'global-builtin', 'import'],
+      silenceDeprecations: ['legacy-js-api', 'color-functions', 'global-builtin', 'import'],
       loadPaths: ['./']
     })).on('error', function handleError(err) {
       console.error('❌ Preprocessor error:', err.message);

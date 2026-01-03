@@ -127,9 +127,11 @@ p {
   top: 0;
   left: 0;
   z-index: 100;
+  /*
   &.active {
     display: block;
   }
+  */
   .modal-wrapper {
     position: fixed;
     top: 50px;
@@ -227,7 +229,6 @@ p {
     background-color: config.$violetcolor;;
   }
   .modal-submit-btn__text {
-    font-family: 'russo-one';
     font-size: 30px;
     color: config.$whitecolor;
     text-transform: uppercase;
@@ -285,9 +286,11 @@ p {
   width: 100%;
   background: config.$violetgradient;
   z-index: 15;
+  /*
   &.active {
     display: block;
   }
+  */
   .we-use-cookie-wrapper {
     max-width: 1320px;
     margin: 0 auto;
@@ -364,6 +367,7 @@ p {
   .burger-menu::after {
     top: 32px;
   }
+  /*
   &.menu-is-open {
     background: transparent;
   }
@@ -380,6 +384,7 @@ p {
   &.menu-is-open .burger-menu span {
     display: none;
   }
+  */
 }
 
 /* mobile menu */

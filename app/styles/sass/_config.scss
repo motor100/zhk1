@@ -14,8 +14,6 @@ $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Fon
 
 // IMPORT SECTION
 
-// @import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
-
 // FONTS LOAD SECTION
 
 @mixin font($fname, $fstyle, $fweight, $furl) {
@@ -27,7 +25,6 @@ $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Fon
   }
 }
 
-@include font('russo-one', normal, 400, '../fonts/russo-one.woff2');
 @include font('opensans-regular', italic, 400, '../fonts/OpenSans-Regular.woff2');
 @include font('opensans-semibold', italic, 400, '../fonts/OpenSans-SemiBold.woff2');
 @include font('opensans-bold', italic, 400, '../fonts/OpenSans-Bold.woff2');
